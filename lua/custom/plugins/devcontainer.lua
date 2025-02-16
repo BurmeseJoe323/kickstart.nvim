@@ -4,5 +4,7 @@ return {
   dependencies = 'nvim-treesitter/nvim-treesitter',
 
   -- Configuration can be done in here
-  require('devcontainer').setup {},
+  config = function()
+    require('devcontainer').setup {}
+  end,
 }
